@@ -48,9 +48,11 @@ section {
     font-size: 1.2em;
 }
 
-.social h1 i {
+.social .fa-heart {
     font-size: 0.8em;
     animation: heart 1.3s infinite;
+    margin-bottom: 30px;
+    color: #333533;
 }
 
 .social .links {
@@ -75,26 +77,26 @@ section {
 
 @-webkit-keyframes heart {
     0% {
-        transform: scale(0.6);
+        transform: scale(1);
     } 
     50% {
-        transform: scale(1);
+        transform: scale(2);
     }
     100% {
-        transform: scale(0.6);
+        transform: scale(1);
     }
 
 }
 
 @keyframes heart {
     0% {
-        transform: scale(0.6);
+        transform: scale(1);
     } 
     50% {
-        transform: scale(1);
+        transform: scale(2);
     }
     100% {
-        transform: scale(0.6);
+        transform: scale(1);
     }
 }
 
@@ -105,6 +107,7 @@ section {
 
     .social {
         width: 90%;
+        padding: 50px 20px;
     }
     .social h1, .social h2 {
         font-size: 1em;
