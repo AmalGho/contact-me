@@ -25,6 +25,7 @@ section {
 .social {
     background-color: #00000020;
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     border-radius: 10px;
     width: 60%;
     display: flex;
