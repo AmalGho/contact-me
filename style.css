@@ -26,6 +26,9 @@ section {
     background-color: #00000020;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
+    -moz-backdrop-filter: blur(15px);
+    -ms-backdrop-filter: blur(15px);
+    -o-backdrop-filter: blur(15px);
     border-radius: 10px;
     width: 60%;
     display: flex;
@@ -37,7 +40,7 @@ section {
     transition: all 0.3s ease-in-out;
 }
 
-.social h1, .social h2 {
+.social h1, .social h2 , .social h3{
     margin-bottom: 30px;
     color: #333533;
 }
@@ -53,7 +56,6 @@ section {
     font-size: 0.8em;
     animation: heart 1.3s infinite;
     margin-bottom: 30px;
-    color: #333533;
 }
 
 .social .links {
