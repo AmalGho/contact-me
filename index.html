@@ -49,20 +49,14 @@
 
         <!-- Initialize Swiper -->
         <script>
-                let swiper = new Swiper(".mySwiper", {
-                effect: "cube",
-                grabCursor: true,
-                cubeEffect: {
-                    shadow: false,
-                    slideShadows: false,
-                    shadowOffset: 40,
-                    shadowScale: 0.95,
-                },
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                spaceBetween: 30,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
                 },
-                });
+            });
         </script>
 </body>
 </html>
