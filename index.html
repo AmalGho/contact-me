@@ -7,21 +7,62 @@
     <title>contact me</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
+
     <section class="main">
-        <div class="social">
-            <h1>Good Day.. I am <span> AMAL</span></h1>
-            <h3>front end developer</h3>
-            <i class="fa-solid fa-heart"></i>
-            <h2>reach me, on</h2>
-            <div class="links">
-                <a href="https://twitter.com/e_lllllllllllll" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
-                <a href="https://github.com/AmalGho" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-                <a href="https://codepen.io/i_2mlx" target="_blank"><i class="fa-brands fa-codepen"></i></a>
-                <a href="https://www.behance.net/amals222" target="_blank"><i class="fa-brands fa-behance-square"></i></a>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="social swiper-slide">
+                    <h1>Good Day.. I am <span> AMAL</span></h1>
+                    <h3>front end developer</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <h2>reach me, on</h2>
+                    <div class="links">
+                        <a href="https://twitter.com/e_lllllllllllll" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://github.com/AmalGho" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+                        <a href="https://codepen.io/i_2mlx" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+                        <a href="https://www.behance.net/amals222" target="_blank"><i class="fa-brands fa-behance-square"></i></a>
+                        <a href="mailto:amalghu@outlook.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="skills swiper-slide">
+                    <h1>My Skills</h1>
+                    <div class="links skill-i">
+                        <i class="fa-brands fa-html5" id="html"></i>
+                        <i class="fa-brands fa-css3-alt" id="css"></i>
+                        <i class="fa-brands fa-bootstrap" id="bootstrap"></i>
+                        <i class="fa-brands fa-js-square" id="js"></i>
+                        <i class="fa-brands fa-git-alt" id="git"></i>
+                        <i class="fa-brands fa-react" id="react"></i>
+                    </div>
+                </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+                let swiper = new Swiper(".mySwiper", {
+                effect: "cube",
+                grabCursor: true,
+                cubeEffect: {
+                    shadow: false,
+                    slideShadows: false,
+                    shadowOffset: 40,
+                    shadowScale: 0.95,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                });
+        </script>
 </body>
 </html>
